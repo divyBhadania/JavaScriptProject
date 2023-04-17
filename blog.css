@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #4070f4;
+  --secondary-color: #fff;
+  --hover-color: #265df2;
+  --error-color: #dc3545;
+}
+
+body {
+  width: 100vw;
+}
+
+.blog-main {
+  margin-top: 50px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* CSS */
+.back-button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.back-button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.back-button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.back-button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.back-button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.back-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.back-button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.back-button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.back-button:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.blog-main img {
+  max-height: 300px;
+  margin-block: 50px;
+  margin-inline: auto;
+  display: block;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+.comment-box {
+  /* background-color:#fbf9f9; */
+  width: 40%;
+  height: 500px;
+  border-radius: 10px;
+  margin-block: 20px;
+  padding: 50px;
+  margin-inline: auto;
+  box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1), 10px 10px 30px 4px rgba(45, 78, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.comment-box input {
+  all: unset;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+  height: 35px;
+  width: 40%;
+  padding-left: 10px;
+}
+
+.comment-box textarea {
+  all: unset;
+  padding: 10px;
+  /* background-color: #fff; */
+  background-color: rgb(246, 246, 246);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border-radius: 20px;
+  width: 70%;
+  height: 100px;
+  resize: none;
+}
+
+.add-comment {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s, background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.add-comment:active,
+.add-comment:focus {
+  outline: none;
+}
+
+.add-comment:hover {
+  background-position: -20px -20px;
+}
+
+.add-comment:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+.comment-list {
+  width: 40%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-card {
+  display: flex;
+}
+
+.comment-card .logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.comment-card .logo .short-name {
+  font-size: 32px;
+}
+
+.comment-card .comment .userName {
+  font-size: 25px;
+}
+
+.comment-card .comment {
+  width: 100%;
+}
+
+.edit-comment {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 11px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  z-index: 9;
+  border: 0;
+  margin-right: 20px;
+}
+
+.edit-comment:hover {
+  background: #00bd68;
+}
+
+.delete-comment {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  word-break: break-word;
+  border: 0;
+}
+
+.delete-comment:active,
+.delete-comment:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+.delete-comment:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
